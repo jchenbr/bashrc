@@ -114,8 +114,9 @@ if ! shopt -oq posix; then
 fi
 
 # for ros directory
-source /opt/ros/indigo/setup.sh
-source ~/catkin_ws/devel/setup.sh
+source /opt/ros/indigo/setup.bash
+source ~/catkin_ws/devel/setup.bash
 
 #
 export PATH=$PATH:~/software/bin
+alias cmk='cd ~/catkin_ws/;catkin_make;cd -;'
